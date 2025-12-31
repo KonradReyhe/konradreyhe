@@ -16,6 +16,7 @@ const { t, locale } = Astro.props;
 const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const currentLocale = locale;
 const otherLocale = locale === "de" ? "en" : "de";
 const otherLocalePath = locale === "de" ? "/en" : "/";
 ---
@@ -81,7 +82,7 @@ const otherLocalePath = locale === "de" ? "/en" : "/";
             <path d="M2 12h20"></path>
             <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
           </svg>
-          {otherLocale.toUpperCase()}
+          {currentLocale.toUpperCase()}
         </a>
       </li>
     </ul>
