@@ -31,6 +31,17 @@ export const en = {
           "Three-layer architecture, clean separation, structured logging",
         ],
       },
+      {
+        company: "4Kanalytics",
+        title: "Software Development Internship",
+        dateRange: "2023 - 2024",
+        bullets: [
+          "Test automation with Playwright",
+          "Development of AI-powered chatbots",
+          "RAG systems and evaluation with RAGAS",
+          "6-month mandatory internship during retraining",
+        ],
+      },
     ],
   },
   education: {

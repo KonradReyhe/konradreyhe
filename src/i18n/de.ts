@@ -31,6 +31,17 @@ export const de = {
           "Dreischichtige Architektur, saubere Trennung, strukturiertes Logging",
         ],
       },
+      {
+        company: "4Kanalytics",
+        title: "Praktikum Software Development",
+        dateRange: "2023 - 2024",
+        bullets: [
+          "Testautomatisierung mit Playwright",
+          "Entwicklung von KI-gestützten Chatbots",
+          "RAG-Systeme und Evaluierung mit RAGAS",
+          "6 Monate Pflichtpraktikum während der Umschulung",
+        ],
+      },
     ],
   },
   education: {
