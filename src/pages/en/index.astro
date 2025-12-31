@@ -1,19 +1,19 @@
 ---
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import About from "../components/About.astro";
-import Projects from "../components/Projects.astro";
-import Experience from "../components/Experience.astro";
-import Education from "../components/Education.astro";
-import Footer from "../components/Footer.astro";
-import { siteConfig } from "../config";
-import { de } from "../i18n/de";
-import "../styles/global.css";
+import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
+import About from "../../components/About.astro";
+import Projects from "../../components/Projects.astro";
+import Experience from "../../components/Experience.astro";
+import Education from "../../components/Education.astro";
+import Footer from "../../components/Footer.astro";
+import { siteConfig } from "../../config";
+import { en } from "../../i18n/en";
+import "../../styles/global.css";
 
-const t = de;
+const t = en;
 ---
 
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -26,12 +26,12 @@ const t = de;
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="alternate" hreflang="en" href="/en" />
     <link rel="alternate" hreflang="de" href="/" />
+    <link rel="alternate" hreflang="en" href="/en" />
     <title>{t.name} - {t.title}</title>
   </head>
   <body>
-    <Header t={t} locale="de" />
+    <Header t={t} locale="en" />
     <section>
       <Hero t={t} />
       <About t={t} />

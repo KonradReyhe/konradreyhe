@@ -1,6 +1,24 @@
 ---
 import { siteConfig } from "../config";
-const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+
+interface ExperienceItem {
+  company: string;
+  title: string;
+  dateRange: string;
+  bullets: string[];
+}
+
+interface Props {
+  t: {
+    experience: {
+      heading: string;
+      items: ExperienceItem[];
+    };
+  };
+}
+
+const { t } = Astro.props;
+const hasExperience = t.experience.items && t.experience.items.length > 0;
 ---
 
 {
@@ -10,7 +28,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
           <div class="lg:col-span-4">
             <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
-              Experience
+              {t.experience.heading}
             </h2>
             <div
               class="w-[75px] h-[5px] mt-2 rounded-full"
@@ -20,7 +38,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 
           <div class="lg:col-span-8">
             <div class="relative">
-              {siteConfig.experience.map((exp, index) => (
+              {t.experience.items.map((exp, index) => (
                 <div class="relative mb-12 last:mb-0">
                   {/* Timeline dot at top of card */}
                   <div
@@ -29,7 +47,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                   />
 
                   {/* Connecting line below card */}
-                  {index < siteConfig.experience.length - 1 && (
+                  {index < t.experience.items.length - 1 && (
                     <div class="absolute left-1/2 bottom-0 w-0.5 h-12 bg-gray-300 -translate-x-1/2 translate-y-full z-10" />
                   )}
 
