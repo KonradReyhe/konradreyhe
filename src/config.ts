@@ -5,12 +5,12 @@ export const siteConfig = {
   accentColor: "#3b82f6",
   social: {
     email: "kreyhe@yahoo.com",
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/konrad-reyhe-6a055b293/",
     twitter: "",
-    github: "",
+    github: "https://github.com/KonradReyhe",
   },
   aboutMe:
-    "Fachinformatiker für Anwendungsentwicklung mit Fokus auf Automatisierung und interne Tools. Ich helfe Unternehmen, manuelle Prozesse durch Software zu ersetzen: Excel-Importe automatisieren, Systeme verbinden, Daten validieren. Mein Ansatz ist pragmatisch. Ich baue Lösungen, die funktionieren und wartbar sind. Durch KI-gestützte Entwicklung kann ich schnell liefern ohne Qualität zu opfern.",
+    "Fachinformatiker für Anwendungsentwicklung mit Fokus auf Automatisierung und interne Tools. Ich bin relativ neu in der Branche, war aber ein Early Adopter für KI-gestützte Entwicklung. Während andere noch skeptisch waren, habe ich bereits produktive Systeme mit Claude und Cursor gebaut. Dabei halte ich mich strikt an bewährte Prinzipien: DRY, SOLID, Clean Code. KI macht mich schneller, aber die Codequalität bleibt hoch. Ich helfe Unternehmen, manuelle Prozesse durch Software zu ersetzen: Excel-Importe automatisieren, Systeme verbinden, Daten validieren.",
   skills: [
     "TypeScript",
     "Python",
