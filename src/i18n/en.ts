@@ -9,7 +9,7 @@ export const en = {
     education: "Education",
   },
   hero: {
-    greeting: "Hi, I'm",
+    greeting: "Hello, I'm",
     cta: "Contact",
   },
   about: {

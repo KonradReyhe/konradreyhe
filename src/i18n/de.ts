@@ -1,7 +1,7 @@
 export const de = {
   lang: "de",
   name: "Konrad Reyhe",
-  title: "Software Developer & Automation Specialist",
+  title: "Softwareentwickler & Automatisierung",
   description: "Ich automatisiere manuelle Prozesse. Interne Tools, Daten-Pipelines und Integrationen.",
   nav: {
     about: "Über mich",
@@ -9,7 +9,7 @@ export const de = {
     education: "Ausbildung",
   },
   hero: {
-    greeting: "Hi, ich bin",
+    greeting: "Hallo, ich bin",
     cta: "Kontakt",
   },
   about: {
