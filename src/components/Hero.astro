@@ -142,22 +142,31 @@ const { t } = Astro.props;
       stroke-width={0}></rect>
   </svg>
   <div class="h-full mx-auto p-8 sm:p-12 md:p-24 flex items-center">
-    <div>
-      <h2
-        class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
-      >
-        {t.hero.greeting}
-      </h2>
-      <h1
-        class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
-      >
-        <span style={{ color: siteConfig.accentColor }}>{t.name}</span>
-      </h1>
-      <p
-        class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
-      >
-        {t.title}
-      </p>
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      <div class="order-2 md:order-1">
+        <h2
+          class="text-pretty text-xl sm:text-2xl md:text-5xl font-bold tracking-tight text-gray-700 animate-fade-in"
+        >
+          {t.hero.greeting}
+        </h2>
+        <h1
+          class="mt-6 sm:mt-8 md:mt-10 text-pretty text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight text-gray-800 animate-fade-in animation-delay-200"
+        >
+          <span style={{ color: siteConfig.accentColor }}>{t.name}</span>
+        </h1>
+        <p
+          class="mt-4 sm:mt-6 md:mt-8 text-pretty text-base sm:text-lg md:text-xl/8 font-medium text-gray-600 animate-fade-in animation-delay-400"
+        >
+          {t.title}
+        </p>
+      </div>
+      <div class="order-1 md:order-2 animate-fade-in">
+        <img
+          src="/profile.jpg"
+          alt={t.name}
+          class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full object-cover shadow-lg border-4 border-white"
+        />
+      </div>
     </div>
   </div>
   <div
