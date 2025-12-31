@@ -3,6 +3,7 @@ import { siteConfig } from "../config";
 
 interface Props {
   t: {
+    lang: string;
     name: string;
     title: string;
     nav: {
@@ -149,6 +150,12 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
           © {new Date().getFullYear()}
           {t.name}. {t.footer.rights}
         </p>
+        <a
+          href={t.lang === "de" ? "/impressum" : "/en/imprint"}
+          class="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+        >
+          {t.lang === "de" ? "Impressum" : "Legal Notice"}
+        </a>
       </div>
     </div>
   </div>
